@@ -1,0 +1,110 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+}
+
+#header,#background,#portfolio {
+    background-color:aliceblue;
+}
+
+#intro,#footer {
+    background-color:#8bebdb;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 100px;
+    background-color: aliceblue;
+}
+
+p {
+    font-size: 30px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.profile-img {
+    height: 200px;
+    border-radius: 50%;
+  }
+
+.creative {
+    color: teal;
+    font-size: 30px;
+}
+
+.resume {
+    display: flex;
+    flex-direction: row;
+}
+
+.education {
+    flex: 1;
+    background-color: #8bebdb;
+    border-left: 10px solid aliceblue;
+    border-right: 5px solid aliceblue; 
+}
+
+.experience {
+    flex: 1;
+    background-color: #8bebdb;
+    border-left: 5px solid aliceblue;
+    border-right: 10px solid aliceblue; 
+}
+
+.portfolio {
+    display: flex;
+    gap: 20px;
+}
+
+.projects {
+    text-align: center;
+}
+
+.projects img {
+    border: 10px solid #8bebdb;
+}
+
+@media (max-width:1200px) {
+    .resume {
+        display: block;
+        width: auto;
+        gap: 20px;
+    }
+
+    .education,.experience {
+        border: 0;
+        border-top: 10px solid aliceblue;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .portfolio {
+        display: block;
+    }
+
+    .projects {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width:350px) {
+    .projects img {
+        height: 150px;
+        width: 200px;
+    }
+}
+
+@media (max-width:300px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .profile-img {
+        height: 100px;
+      }
+}
+
+
